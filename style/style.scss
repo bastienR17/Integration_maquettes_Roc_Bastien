@@ -7,7 +7,6 @@
 }
 
 body {
-  margin: 0;
   background: #000000 ;
 }
 
@@ -50,13 +49,7 @@ header {
     align-items: center;
 
      .menubg {
-
-
-      img{
-        width: 3vh;
-        height: 3vh;
-        display: none;
-      }
+      display: none;
     }
 
     .Search_bar {
@@ -298,6 +291,7 @@ main {
         height: 82%;
 
         .cat {
+          width: 100%;
           display: flex;
           flex-direction: row;
           background: rgba(32, 35, 43, 0.7);
@@ -306,65 +300,85 @@ main {
           justify-content: space-around;
           align-items: center;
 
-          .logo {
-            width: 5%;
-            display: flex;
+          .gauche {
+            width: 48%;
+            height: 100%;
             align-items: center;
+            display: flex;
+            flex-direction: row;
+            margin-top: 0;
+            justify-content: space-between;
 
-            img {
-              width: 5vh;
-              height: 5vh;
+            .logo {
+              width: 5%;
+              display: flex;
+              align-items: center;
+
+              img {
+                width: 5vh;
+                height: 5vh;
+              }
+            }
+
+            div:nth-child(2) {
+              width: 30%;
+  
+              p:nth-child(1) {
+                font-size: 17px;
+              }
+  
+              p:nth-child(2) {
+                opacity: 70%;
+                text-transform: uppercase;
+              }
+            }
+
+            div:nth-child(3) {
+              width: 30%;
+  
+              p:nth-child(2) {
+                opacity: 70%;
+                color: #1970D6;
+              }
             }
           }
 
-          div:nth-child(2) {
-            width: 15%;
+          .droite {
+            width: 48%;
+            height: 100%;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
 
-            p:nth-child(1) {
-              font-size: 17px;
+            div:nth-child(4) {
+              width: 15%;
+  
+              p:nth-child(2) {
+                color: #4AD619;
+              }
+  
             }
 
-            p:nth-child(2) {
-              opacity: 70%;
-              text-transform: uppercase;
-            }
-          }
-
-          div:nth-child(3) {
-            width: 15%;
-
-            p:nth-child(2) {
-              opacity: 70%;
-              color: #1970D6;
-            }
-          }
-
-          div:nth-child(4) {
-            width: 15%;
-
-            p:nth-child(2) {
-              color: #4AD619;
+            .vague {
+              width: 20%;
             }
 
-          }
-
-          .vague {
-            width: 20%;
-          }
-
-          button {
-            background-color: #000000;
-            border: none;
-            padding: 0.5rem 1rem;
-            border-radius: 90px;
-            font-size: 15px;
+            button {
+              background-color: #000000;
+              border: none;
+              padding: 0.5rem 1rem;
+              border-radius: 90px;
+              font-size: 15px;
+            }
+  
           }
         }
 
         .cat:nth-child(2) {
 
           div:nth-child(3) {
-            width: 15%;
+            width: 30%;
 
             p:nth-child(2) {
               opacity: 70%;
@@ -373,7 +387,7 @@ main {
           }
 
           div:nth-child(3) {
-            width: 15%;
+            width: 30%;
 
             p:nth-child(2) {
               color: #D61919;
@@ -550,16 +564,21 @@ main {
     display: flex;
     flex-direction: row;
     width: 100%;
+
+    .milieu {
+      .menubg {
+        display: flex;
+        width: 4vh;
+        height: 4vh;
+      }
+    }
   }
 
-   body header .milieu .menubg {
-     background-color: #6C1182;
-        width: 100%;
-        height: 100%;
+  main {
+    display: flex;
+    flex-direction: column;
+  }
 
-
-
-   }
   body header .gauche {
     display: none;
 
@@ -584,8 +603,6 @@ main {
     text-align: center;
   }
 
-
-
   body header .droite {
     display: none;
   }
@@ -593,6 +610,63 @@ main {
   main {
     width: 100%;
     padding: 1.5vh;
+
+    .milieu {
+      width: 100%;
+
+      .Transactions {
+        width: 100%;
+
+        .cats {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          margin-top: 5vh;
+  
+          .cat {
+            width: 100%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 3vh;
+            padding: 10px 0 5px 0;
+
+            .gauche {
+              width: 100%;
+              height: 50%;
+              align-items: center;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-around;
+              margin-top: 0;
+            }
+
+            .droite {
+              width: 100%;
+              height: 50%;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: space-around;
+              margin-top: 0;
+
+              div:nth-child(1){
+                display: flex;
+                flex-direction: row;
+
+                p:nth-child(2){
+                  margin-left: 2vh;
+                }
+              }
+
+              .vague {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 
   main .gauche {
@@ -600,7 +674,30 @@ main {
   }
 
   main .droite {
-  display: none;
+    display: flex;
+    width: 100%;
+    margin-top: -5vh;
+
+    .titre {
+      margin-top: 0;
+    }
+
+    .Assets {
+      width: 100%;
+      height: 100%;
+
+      .parent {
+        width: 100%;
+        height: 100%;
+
+        .asset {
+          width: 100%;
+          height: 100%;
+          padding: 15px 10px;
+          margin-top: 2vh;
+        }
+      }
+    }
   }
 
   main .milieu {
@@ -629,34 +726,6 @@ main {
       height: 50%;
     }
 
-    .Transactions {
-      width: 100%;
-      height: 20vh;
-      margin-top: 3vh;
-
-      .haut {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-      }
-    }
-
-    .cats {
-      width: 100%;
-      height: 90%;
-
-      .cat{
-        height: 50%;
-
-        .vague {
-          display: none;
-        }
-
-        button {
-          width: 15%;
-        }
-      }
-    }
   }
 
 
