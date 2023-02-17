@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r119/three.min.js"></script>
+
+
+  <link rel="stylesheet" href="style/style.css" />
+</head>
+
+<body>
+  <script src="js/script.js"></script>
+
+  <header>
+
+    <div class="gauche">
+      <div class="logo">
+        <img src="style/img/Logo.svg" alt="logo">
+        <p>inance</p>
+      </div>
+    </div>
+    <div class="milieu">
+
+      <div class="menubg">
+
+
+        <div class="icone_m_bg">
+          <img src="style/img/menuburger.svg">
+        </div>
+        
+      <div class="username">
+        <p> Hi Rogers</p>
+      </div>
+
+      <div class="Search_bar">
+        <img src="style/img/Search.svg" alt="logo search-bar">
+        <input type="text" placeholder="Search">
+      </div>
+    </div>
+    <div class="droite">
+      <div class="notif">
+        <img src="style/img/Cloche.svg" alt="notification">
+        <span></span>
+      </div>
+
+      <div class="user">
+        <img src="style/img/Account.png" alt="user">
+      </div>
+    </div>
+
+  </header>
+
+  <main>
+    <div class="gauche">
+      <div class="haut">
+        <div class="dashboard">
+          <img src="style/img/dashboard.svg">
+          <p>Dashboard</p>
+        </div>
+
+        <div class="menu">
+          <div>
+            <img src="style/img/Invoice.svg">
+            <p>Invoices</p>
+          </div>
+
+          <div>
+            <img src="style/img/People.svg">
+            <p>Clients</p>
+          </div>
+
+          <div>
+            <img src="style/img/Box.svg">
+            <p>Products</p>
+          </div>
+
+          <div>
+            <img src="style/img/Message.svg">
+            <p>Messages</p>
+          </div>
+
+          <div>
+            <img src="style/img/Infos.svg">
+            <p>Settings</p>
+          </div>
+
+          <div>
+            <img src="style/img/Options.svg">
+            <p>Help</p>
+          </div>
+        </div>
+      </div>
+      <div class="logout">
+        <img src="style/img/Logout.svg">
+        <p>Log out</p>
+      </div>
+    </div>
+
+    <div class="milieu">
+      <div class="haut">
+        <div class="balance">
+          <p>Total balance</p>
+          <p>0.97894652 <span>BTC</span></p>
+          <p>$40,123.56</p>
+        </div>
+
+        <div class="selector">
+          <p>Portfolio</p>
+          <p>Funding </p>
+          <p>Assets </p>
+          <p>P2P</p>
+        </div>
+      </div>
+
+
+      <canvas id="graph"></canvas>
+
+
+
+      <div class="Transactions">
+        <div class="haut">
+          <p>Recent Transactions</p>
+          <p>See all coins</p>
+        </div>
+
+        <div class="cats">
+          <div class="cat">
+            <div class="logo">
+              <img src="style/img/Bitcoin_.svg">
+            </div>
+            <div>
+              <p>Bitcion</p>
+              <p>Btc</p>
+            </div>
+
+            <div>
+              <p>Market Cap</p>
+              <p>$40,243.70</p>
+            </div>
+
+            <div>
+              <p>24h change</p>
+              <p>+1,56</p>
+            </div>
+
+            <div class="vague">
+              <img src="style/img/vague.svg">
+            </div>
+            <button>Trade</button>
+
+          </div>
+
+          <div class="cat">
+            <div class="logo">
+              <img src="style/img/Etherum.svg">
+            </div>
+          
+            <div>
+              <p>Etherium</p>
+              <p>ETH</p>
+            </div>
+
+            <div>
+              <p>Market Cap</p>
+              <p>$40,243.70</p>
+            </div>
+
+            <div>
+              <p>24h change</p>
+              <p>+1,56</p>
+            </div>
+
+            <div class="vague">
+              <img src="style/img/vagueB.svg">
+            </div>
+
+            <button>Trade</button>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="droite">
+
+      <div class="Transactions">
+
+        <div class="titre">
+          <p>Recent Transactions</p>
+        </div>
+
+        <div class="liste">
+          <div class="recent">
+            <div>
+              <img src="style/img/Usdt.svg">
+            </div>
+
+            <div>
+              <p>Usdt</p>
+              <p>Recieved</p>
+            </div>
+
+            <div>
+              <p>+$3,546</p>
+              <p>Today, 13:45 pm</p>
+            </div>
+          </div>
+
+          <div class="recent">
+            <div>
+              <img src="style/img/BNB.svg">
+            </div>
+
+            <div>
+              <p>BnB</p>
+              <p>Buy</p>
+            </div>
+
+            <div>
+              <p>+ 0.7546</p>
+              <p>Today, 5:45 am</p>
+            </div>
+          </div>
+
+          <div class="recent">
+            <div>
+              <img src="style/img/LiteCoin.svg">
+            </div>
+
+            <div>
+              <p>LiteCoin</p>
+              <p>Withdrawal</p>
+            </div>
+
+            <div>
+              <p>+ 0.7546</p>
+              <p>Today 8:55 am</p>
+            </div>
+          </div>
+
+          <div class="recent">
+            <div>
+              <img src="style/img/Bitcoin.svg">
+            </div>
+
+            <div>
+              <p>Btc</p>
+              <p>Recieved</p>
+            </div>
+
+            <div>
+              <p>+ 2.7546</p>
+              <p>Today 8:55 am</p>
+            </div>
+          </div>
+
+          <div class="recent">
+            <div>
+              <img src="style/img/Etherum.svg">
+            </div>
+            <div>
+              <p>Etherium</p>
+              <p>Recieved</p>
+            </div>
+
+            <div>
+              <p>+ 1.646</p>
+              <p>Today 10:02 am</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="Assets">
+        <div class="titre">
+          <p>Asset</p>
+        </div>
+
+        <div class="parent">
+          <div class="asset">
+            <div>
+              <img src="style/img/BitcoinB.svg">
+              <p>Bitcion</p>
+            </div>
+            <div>
+              <p>121,6450.45</p>
+              <p>BTC</p>
+            </div>
+          </div>
+
+          <div class="asset">
+            <div>
+              <img src="style/img/Etherum.svg">
+              <p>Etherium</p>
+            </div>
+            <div>
+              <p>143,850.455</p>
+              <p>ETH</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
