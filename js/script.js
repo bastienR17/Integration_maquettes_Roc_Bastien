@@ -38,10 +38,35 @@ var graph = new Chart(ctx, {
         ],
     },
     options: {
+        legend: {
+            display: false,
+        }  ,
         responsive: true,
+        scales: {
+            yAxes: [
+                {
+                    ticks: {
+                        beginAtZero: true,
+                    },
+                },
+            ],
+        },
+        tooltips: {
+            mode: 'index',
+            intersect: false,
+           },
+            hover: {
+                mode: 'nearest',
+                intersect: true
+            },
+            plugins: {
+                filler: {
+                    propagate: false
+                },
+                'samples-filler-analyser': {
+                    target: 'chart-analyser'
 
-    },
-})
-
-
-
+                }
+                }
+            }
+        })

@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   color: #fff;
 }
 
@@ -46,6 +46,11 @@ header .milieu {
   justify-content: space-between;
   align-items: center;
 }
+header .milieu .menubg img {
+  width: 3vh;
+  height: 3vh;
+  display: none;
+}
 header .milieu .Search_bar {
   background-color: #fff;
   display: flex;
@@ -54,6 +59,9 @@ header .milieu .Search_bar {
   width: 50%;
   padding: 0.5vh 1vh;
   border-radius: 10px;
+}
+header .milieu .Search_bar input {
+  width: 50%;
 }
 header .milieu .Search_bar img {
   width: 3vh;
@@ -214,19 +222,14 @@ main .milieu .haut .selector {
   width: 50%;
   height: 60%;
 }
-main .milieu .graph {
+main .milieu #graph {
   height: 60%;
-  margin-top: 2vh;
-}
-main .milieu .graph img {
-  width: 100%;
-  height: 100%;
-  margin: auto;
+  margin-top: 3vh;
 }
 main .milieu .Transactions {
   display: flex;
   flex-direction: column;
-  height: 25%;
+  height: 30%;
   justify-content: space-between;
   width: 100%;
   margin-top: 2vh;
@@ -251,13 +254,13 @@ main .milieu .Transactions .cats {
   flex-direction: column;
   justify-content: space-around;
   width: 100%;
-  height: 78%;
+  height: 82%;
 }
 main .milieu .Transactions .cats .cat {
   display: flex;
   flex-direction: row;
   background: rgba(32, 35, 43, 0.7);
-  height: 45%;
+  height: 42%;
   border-radius: 20px;
   justify-content: space-around;
   align-items: center;
@@ -295,7 +298,7 @@ main .milieu .Transactions .cats .cat div:nth-child(4) p:nth-child(2) {
   color: #4AD619;
 }
 main .milieu .Transactions .cats .cat .vague {
-  width: 15%;
+  width: 20%;
 }
 main .milieu .Transactions .cats .cat button {
   background-color: #000000;
@@ -311,10 +314,10 @@ main .milieu .Transactions .cats .cat:nth-child(2) div:nth-child(3) p:nth-child(
   opacity: 70%;
   color: #6C1182;
 }
-main .milieu .Transactions .cats .cat:nth-child(2) div:nth-child(4) {
+main .milieu .Transactions .cats .cat:nth-child(2) div:nth-child(3) {
   width: 15%;
 }
-main .milieu .Transactions .cats .cat:nth-child(2) div:nth-child(4) p:nth-child(2) {
+main .milieu .Transactions .cats .cat:nth-child(2) div:nth-child(3) p:nth-child(2) {
   color: #D61919;
 }
 main .droite {
@@ -384,10 +387,10 @@ main .droite .Transactions .recent img {
   width: 4vh;
   height: 4vh;
 }
-main .droite .Transactions .recent:nth-child(4) div:nth-child(3) {
+main .droite .Transactions .recent:nth-child(3) div:nth-child(3) {
   width: 40%;
 }
-main .droite .Transactions .recent:nth-child(4) div:nth-child(3) p:nth-child(1) {
+main .droite .Transactions .recent:nth-child(3) div:nth-child(3) p:nth-child(1) {
   color: #D61919;
 }
 main .droite .Assets {
@@ -445,22 +448,41 @@ main .droite .Assets .parent .asset:nth-child(2) p {
 }
 
 @media screen and (max-width: 767.98px) {
-  body header .milieu .Search_bar {
+  header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  body header .milieu .menubg {
+    background-color: #6C1182;
+    width: 100%;
+    height: 100%;
+  }
+  body header .gauche {
     display: none;
   }
-  body header .milieu .username {
-    margin-left: 100px;
-    text-align: center;
+  header .milieu .Search_bar {
+    display: none;
   }
-  body header .milieu .icone_m_bg {
-    width: 10px;
-    height: 10px;
+  header .milieu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  header .milieu .username {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
   }
   body header .droite {
     display: none;
   }
-  body header .gauche {
-    display: none;
+  main {
+    width: 100%;
+    padding: 1.5vh;
   }
   main .gauche {
     display: none;
@@ -469,7 +491,49 @@ main .droite .Assets .parent .asset:nth-child(2) p {
     display: none;
   }
   main .milieu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  main .milieu .haut {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: start;
+    height: 18%;
+    justify-content: space-between;
+  }
+  main .milieu .haut .selector {
+    width: 100%;
+    height: 5vh;
+  }
+  main .milieu #graph {
+    width: 100%;
+    margin-top: 5vh;
+    height: 50%;
+  }
+  main .milieu .Transactions {
+    width: 100%;
+    height: 20vh;
+    margin-top: 3vh;
+  }
+  main .milieu .Transactions .haut {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  main .milieu .cats {
+    width: 100%;
+    height: 90%;
+  }
+  main .milieu .cats .cat {
+    height: 50%;
+  }
+  main .milieu .cats .cat .vague {
     display: none;
+  }
+  main .milieu .cats .cat button {
+    width: 15%;
   }
 }
 
